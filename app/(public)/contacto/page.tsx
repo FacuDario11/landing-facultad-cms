@@ -25,9 +25,9 @@ export default async function ContactPage() {
           {items.map((item) => (
             <Card key={item.label} className="shadow-sm">
               <CardContent className="flex gap-3 p-5">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-utn-sky text-primary"><item.icon className="h-5 w-5" /></div>
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-inst-sky text-primary"><item.icon className="h-5 w-5" /></div>
                 <div>
-                  <h2 className="font-semibold text-utn-ink">{item.label}</h2>
+                  <h2 className="font-semibold text-inst-ink">{item.label}</h2>
                   <p className="mt-1 break-words text-sm text-muted-foreground">{item.value}</p>
                 </div>
               </CardContent>

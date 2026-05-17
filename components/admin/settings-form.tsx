@@ -61,12 +61,12 @@ export function SettingsForm({ action, settings }: SettingsFormProps) {
             </div>
           </div>
 
-          <p className="rounded-md border border-primary/20 bg-utn-sky p-3 text-sm text-utn-ink">
+          <p className="rounded-md border border-primary/20 bg-inst-sky p-3 text-sm text-inst-ink">
             Estos datos alimentan la landing publica, el contacto y el footer. Logo, banner y textos extendidos quedan pendientes porque el flujo visual todavia no esta definido en esta fase.
           </p>
 
           {state.message ? (
-            <p className={`rounded-md border p-3 text-sm ${state.ok ? "border-primary/20 bg-utn-sky text-utn-ink" : "border-destructive/20 bg-destructive/10 text-destructive"}`} role="status">
+            <p className={`rounded-md border p-3 text-sm ${state.ok ? "border-primary/20 bg-inst-sky text-inst-ink" : "border-destructive/20 bg-destructive/10 text-destructive"}`} role="status">
               {state.message}
             </p>
           ) : null}

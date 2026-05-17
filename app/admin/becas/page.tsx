@@ -24,13 +24,13 @@ export default async function AdminScholarshipsPage({ searchParams }: { searchPa
   return (
     <div className="grid gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-utn-ink">Becas</h1>
+        <h1 className="text-2xl font-bold text-inst-ink">Becas</h1>
         <p className="mt-1 text-sm text-muted-foreground">Módulo conectado a Supabase para crear, editar, publicar y cerrar convocatorias de becas.</p>
       </div>
       <div className="grid gap-3">
         {editingScholarship ? (
-          <div className="flex flex-wrap items-center justify-between gap-3 rounded-md border bg-utn-sky p-3">
-            <p className="text-sm font-medium text-utn-ink">Editando: {editingScholarship.title}</p>
+          <div className="flex flex-wrap items-center justify-between gap-3 rounded-md border bg-inst-sky p-3">
+            <p className="text-sm font-medium text-inst-ink">Editando: {editingScholarship.title}</p>
             <Button asChild variant="outline" size="sm"><Link href="/admin/becas">Cancelar edición</Link></Button>
           </div>
         ) : null}
@@ -42,7 +42,7 @@ export default async function AdminScholarshipsPage({ searchParams }: { searchPa
             <div key={item.id} className="grid gap-3 rounded-md border p-3 lg:grid-cols-[1fr_auto] lg:items-center">
               <div>
                 <div className="mb-2 flex flex-wrap items-center gap-2">
-                  <p className="font-semibold text-utn-ink">{item.title}</p>
+                  <p className="font-semibold text-inst-ink">{item.title}</p>
                   <Badge variant={statusVariant(item.status)} className="capitalize">{item.status}</Badge>
                 </div>
                 <p className="text-sm text-muted-foreground">{item.slug}</p>

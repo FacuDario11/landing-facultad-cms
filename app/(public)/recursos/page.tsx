@@ -21,9 +21,9 @@ export default async function ResourcesPage() {
           return (
             <Card key={item.id} className="shadow-soft">
               <CardContent className="p-5">
-                <div className="flex h-11 w-11 items-center justify-center rounded-md bg-utn-sky text-primary"><FileText className="h-5 w-5" /></div>
+                <div className="flex h-11 w-11 items-center justify-center rounded-md bg-inst-sky text-primary"><FileText className="h-5 w-5" /></div>
                 <Badge variant="secondary" className="mt-4 capitalize">{item.type}</Badge>
-                <h2 className="mt-3 text-lg font-semibold text-utn-ink">{item.title}</h2>
+                <h2 className="mt-3 text-lg font-semibold text-inst-ink">{item.title}</h2>
                 <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.description}</p>
                 <p className="mt-4 text-xs text-muted-foreground">Actualizado: {formatDate(item.updatedAt)}</p>
                 {hasFile ? (

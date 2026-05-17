@@ -61,9 +61,9 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-slate-50">
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 border-r bg-white lg:block">
         <div className="flex h-16 items-center gap-3 border-b px-5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-xs font-bold text-white">UTN</div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-xs font-bold text-white">PE</div>
           <div>
-            <p className="text-sm font-bold text-utn-ink">Panel Consejería</p>
+            <p className="text-sm font-bold text-inst-ink">Panel Consejería</p>
             <p className="text-xs text-muted-foreground">Administración CMS</p>
           </div>
         </div>
@@ -74,7 +74,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
               href={item.href}
               className={cn(
                 "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-primary",
-                pathname === item.href && "bg-utn-sky text-primary"
+                pathname === item.href && "bg-inst-sky text-primary"
               )}
             >
               <item.icon className="h-4 w-4" />
@@ -85,7 +85,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
       </aside>
       <div className="lg:pl-64">
         <header className="sticky top-0 z-20 flex h-16 items-center justify-between border-b bg-white px-4 lg:px-8">
-          <div className="flex items-center gap-2 text-sm font-semibold text-utn-ink">
+          <div className="flex items-center gap-2 text-sm font-semibold text-inst-ink">
             <BarChart3 className="h-4 w-4 text-primary" />
             Gestión institucional de contenidos
           </div>
@@ -112,7 +112,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
               href={item.href}
               className={cn(
                 "flex shrink-0 items-center gap-2 rounded-md border px-3 py-2 text-xs font-semibold text-muted-foreground",
-                pathname === item.href && "border-primary bg-utn-sky text-primary"
+                pathname === item.href && "border-primary bg-inst-sky text-primary"
               )}
             >
               <item.icon className="h-4 w-4" />

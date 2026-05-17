@@ -65,7 +65,7 @@ export function ContactForm() {
         {errors.message ? <p className="text-sm text-destructive">{errors.message}</p> : null}
       </div>
       {success ? (
-        <p className="rounded-md border border-primary/20 bg-utn-sky p-3 text-sm text-utn-ink" role="status">
+        <p className="rounded-md border border-primary/20 bg-inst-sky p-3 text-sm text-inst-ink" role="status">
           Consulta registrada en modo demo. En la siguiente fase se conectará el envío real por backend o correo institucional.
         </p>
       ) : null}

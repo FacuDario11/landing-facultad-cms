@@ -17,7 +17,7 @@ export function NewsCard({ item }: { item: NewsItem }) {
           <Badge variant="secondary" className="capitalize">{item.category}</Badge>
           <span className="text-xs text-muted-foreground">{formatDate(item.publishedAt)}</span>
         </div>
-        <h2 className="line-clamp-2 text-lg font-semibold leading-snug text-utn-ink">{item.title}</h2>
+        <h2 className="line-clamp-2 text-lg font-semibold leading-snug text-inst-ink">{item.title}</h2>
         <p className="mt-2 line-clamp-3 text-sm leading-6 text-muted-foreground">{item.excerpt}</p>
         <Link href={`/noticias/${item.slug}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary">
           Leer más <ArrowRight className="h-4 w-4" />

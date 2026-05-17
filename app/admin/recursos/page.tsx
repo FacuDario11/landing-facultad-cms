@@ -31,13 +31,13 @@ export default async function AdminResourcesPage({ searchParams }: { searchParam
   return (
     <div className="grid gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-utn-ink">Recursos</h1>
+        <h1 className="text-2xl font-bold text-inst-ink">Recursos</h1>
         <p className="mt-1 text-sm text-muted-foreground">Módulo conectado a Supabase para crear, editar, publicar y archivar recursos institucionales.</p>
       </div>
       <div className="grid gap-3">
         {editingResource ? (
-          <div className="flex flex-wrap items-center justify-between gap-3 rounded-md border bg-utn-sky p-3">
-            <p className="text-sm font-medium text-utn-ink">Editando: {editingResource.title}</p>
+          <div className="flex flex-wrap items-center justify-between gap-3 rounded-md border bg-inst-sky p-3">
+            <p className="text-sm font-medium text-inst-ink">Editando: {editingResource.title}</p>
             <Button asChild variant="outline" size="sm"><Link href="/admin/recursos">Cancelar edición</Link></Button>
           </div>
         ) : null}
@@ -52,7 +52,7 @@ export default async function AdminResourcesPage({ searchParams }: { searchParam
               <div key={item.id} className="grid gap-3 rounded-md border p-3 lg:grid-cols-[1fr_auto] lg:items-center">
                 <div>
                   <div className="mb-2 flex flex-wrap items-center gap-2">
-                    <p className="font-semibold text-utn-ink">{item.title}</p>
+                    <p className="font-semibold text-inst-ink">{item.title}</p>
                     <Badge variant={statusVariant(item.status)}>{statusLabel(item.status)}</Badge>
                     <Badge variant="outline" className="capitalize">{item.type}</Badge>
                     <Badge variant={hasFile ? "success" : "secondary"}>{hasFile ? "Con archivo" : "Sin archivo"}</Badge>

@@ -151,7 +151,7 @@ export function InternshipForm({ action, initialData }: InternshipFormProps) {
           </div>
 
           {state.message ? (
-            <p className={`rounded-md border p-3 text-sm ${state.ok ? "border-primary/20 bg-utn-sky text-utn-ink" : "border-destructive/20 bg-destructive/10 text-destructive"}`} role="status">
+            <p className={`rounded-md border p-3 text-sm ${state.ok ? "border-primary/20 bg-inst-sky text-inst-ink" : "border-destructive/20 bg-destructive/10 text-destructive"}`} role="status">
               {state.message}
             </p>
           ) : null}

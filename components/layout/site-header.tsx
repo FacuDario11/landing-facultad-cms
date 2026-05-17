@@ -24,10 +24,10 @@ export function SiteHeader({ settings }: { settings: SiteSettings }) {
     <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
       <div className="container flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-sm font-bold text-primary-foreground">UTN</div>
+          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-sm font-bold text-primary-foreground">PE</div>
           <div className="leading-tight">
-            <p className="text-sm font-bold text-utn-ink">{settings.institutionName}</p>
-            <p className="text-xs text-muted-foreground">Facultad Regional Tucumán</p>
+            <p className="text-sm font-bold text-inst-ink">{settings.institutionName}</p>
+            <p className="text-xs text-muted-foreground">Facultad / Institución educativa</p>
           </div>
         </Link>
 

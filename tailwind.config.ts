@@ -49,7 +49,7 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         },
-        utn: {
+        inst: {
           blue: "#0057A8",
           navy: "#083B75",
           sky: "#E7F1FB",

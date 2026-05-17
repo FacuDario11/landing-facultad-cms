@@ -21,7 +21,7 @@ export default async function InternshipsPage() {
                 <Badge variant="outline">{item.career}</Badge>
                 <Badge variant="secondary" className="capitalize">{item.modality}</Badge>
               </div>
-              <h2 className="mt-4 text-xl font-semibold text-utn-ink">{item.title}</h2>
+              <h2 className="mt-4 text-xl font-semibold text-inst-ink">{item.title}</h2>
               <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><BriefcaseBusiness className="h-4 w-4 text-primary" /> {item.company}</p>
               <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><CalendarDays className="h-4 w-4 text-primary" /> Vence: {formatDate(item.deadline)}</p>
               <h3 className="mt-4 text-sm font-semibold">Requisitos</h3>
@@ -31,7 +31,7 @@ export default async function InternshipsPage() {
         )) : (
           <Card className="shadow-sm md:col-span-2">
             <CardContent className="p-6">
-              <h2 className="text-lg font-semibold text-utn-ink">Sin pasantías activas</h2>
+              <h2 className="text-lg font-semibold text-inst-ink">Sin pasantías activas</h2>
               <p className="mt-2 text-sm text-muted-foreground">No hay convocatorias de pasantías publicadas y vigentes por el momento.</p>
             </CardContent>
           </Card>

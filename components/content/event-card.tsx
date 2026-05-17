@@ -18,7 +18,7 @@ export function EventCard({ event }: { event: EventItem }) {
           <Badge variant="outline">{event.category}</Badge>
           <Badge variant="secondary" className="capitalize">{event.modality}</Badge>
         </div>
-        <h2 className="text-lg font-semibold text-utn-ink">{event.title}</h2>
+        <h2 className="text-lg font-semibold text-inst-ink">{event.title}</h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">{event.description}</p>
         <div className="mt-4 grid gap-2 text-sm text-muted-foreground">
           <p className="flex items-center gap-2"><CalendarDays className="h-4 w-4 text-primary" /> {formatDate(event.date, "d MMM yyyy, HH:mm")}</p>

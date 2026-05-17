@@ -16,13 +16,13 @@ export default async function AdminFaqPage({ searchParams }: { searchParams: Pro
   return (
     <div className="grid gap-6">
       <div>
-        <h1 className="text-2xl font-bold text-utn-ink">FAQ</h1>
+        <h1 className="text-2xl font-bold text-inst-ink">FAQ</h1>
         <p className="mt-1 text-sm text-muted-foreground">Modulo conectado a Supabase para crear, editar y publicar preguntas frecuentes institucionales.</p>
       </div>
       <div className="grid gap-3">
         {editingFaq ? (
-          <div className="flex flex-wrap items-center justify-between gap-3 rounded-md border bg-utn-sky p-3">
-            <p className="text-sm font-medium text-utn-ink">Editando: {editingFaq.question}</p>
+          <div className="flex flex-wrap items-center justify-between gap-3 rounded-md border bg-inst-sky p-3">
+            <p className="text-sm font-medium text-inst-ink">Editando: {editingFaq.question}</p>
             <Button asChild variant="outline" size="sm"><Link href="/admin/faq">Cancelar edicion</Link></Button>
           </div>
         ) : null}
@@ -37,7 +37,7 @@ export default async function AdminFaqPage({ searchParams }: { searchParams: Pro
               <div key={item.id} className="grid gap-3 rounded-md border p-3 lg:grid-cols-[1fr_auto] lg:items-center">
                 <div>
                   <div className="mb-2 flex flex-wrap items-center gap-2">
-                    <p className="font-semibold text-utn-ink">{item.question}</p>
+                    <p className="font-semibold text-inst-ink">{item.question}</p>
                     <Badge variant={published ? "success" : "secondary"}>{published ? "Publicada" : "Inactiva"}</Badge>
                     <Badge variant="outline">{item.category}</Badge>
                     <Badge variant="secondary">Orden {item.sortOrder ?? 0}</Badge>

@@ -8,19 +8,19 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
       <div className="container grid gap-8 py-10 md:grid-cols-[1.5fr_1fr_1fr]">
         <div>
           <div className="mb-4 flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-sm font-bold text-primary-foreground">UTN</div>
+            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-sm font-bold text-primary-foreground">PE</div>
             <div>
-              <p className="font-bold text-utn-ink">{settings.institutionName}</p>
-              <p className="text-sm text-muted-foreground">Facultad Regional Tucumán</p>
+              <p className="font-bold text-inst-ink">{settings.institutionName}</p>
+              <p className="text-sm text-muted-foreground">Facultad / Institución educativa</p>
             </div>
           </div>
           <p className="max-w-md text-sm leading-6 text-muted-foreground">
-            Plataforma institucional de comunicación, acompañamiento y recursos para estudiantes de tecnicaturas e ingenierías.
+            Plataforma institucional de comunicación, acompañamiento y recursos para la comunidad estudiantil.
           </p>
         </div>
 
         <div>
-          <h2 className="mb-3 text-sm font-semibold text-utn-ink">Secciones</h2>
+          <h2 className="mb-3 text-sm font-semibold text-inst-ink">Secciones</h2>
           <div className="grid gap-2 text-sm text-muted-foreground">
             <Link href="/noticias" className="hover:text-primary">Noticias</Link>
             <Link href="/becas" className="hover:text-primary">Becas</Link>
@@ -30,7 +30,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
         </div>
 
         <div>
-          <h2 className="mb-3 text-sm font-semibold text-utn-ink">Contacto</h2>
+          <h2 className="mb-3 text-sm font-semibold text-inst-ink">Contacto</h2>
           <div className="grid gap-3 text-sm text-muted-foreground">
             <p className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /> {settings.email}</p>
             <p className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 text-primary" /> {settings.address}</p>

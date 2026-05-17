@@ -55,6 +55,6 @@
   }
 
   .prose-institutional {
-    @apply prose prose-slate max-w-none prose-headings:text-utn-ink prose-a:text-primary prose-a:no-underline hover:prose-a:underline;
+    @apply prose prose-slate max-w-none prose-headings:text-inst-ink prose-a:text-primary prose-a:no-underline hover:prose-a:underline;
   }
 }

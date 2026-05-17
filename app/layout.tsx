@@ -8,13 +8,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   metadataBase: new URL(absoluteUrl()),
   title: {
-    default: "Consejería Estudiantil UTN FRT",
-    template: "%s | Consejería Estudiantil UTN FRT"
+    default: "Portal Estudiantil Institucional",
+    template: "%s | Portal Estudiantil Institucional"
   },
-  description: "Plataforma institucional de comunicación, noticias, becas, pasantías, eventos y recursos para estudiantes de UTN Facultad Regional Tucumán.",
+  description: "Demo institucional para centralizar novedades, eventos, becas, pasantías, recursos y canales de contacto para la comunidad estudiantil.",
   openGraph: {
-    title: "Consejería Estudiantil UTN FRT",
-    description: "Comunicación y acompañamiento estudiantil de la Facultad Regional Tucumán.",
+    title: "Portal Estudiantil Institucional",
+    description: "Información académica y acompañamiento estudiantil en un solo lugar.",
     type: "website",
     locale: "es_AR",
     url: absoluteUrl()

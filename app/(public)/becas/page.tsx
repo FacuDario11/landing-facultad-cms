@@ -20,7 +20,7 @@ export default async function ScholarshipsPage() {
             <CardContent className="grid gap-6 p-5 lg:grid-cols-[1fr_0.8fr]">
               <div>
                 <Badge variant={item.status === "abierta" ? "success" : "warning"} className="capitalize">{item.status}</Badge>
-                <h2 className="mt-3 text-xl font-semibold text-utn-ink">{item.title}</h2>
+                <h2 className="mt-3 text-xl font-semibold text-inst-ink">{item.title}</h2>
                 <p className="mt-2 leading-7 text-muted-foreground">{item.summary}</p>
                 <p className="mt-4 flex items-center gap-2 text-sm text-muted-foreground"><CalendarDays className="h-4 w-4 text-primary" /> Vence: {formatDate(item.deadline)}</p>
               </div>
@@ -40,7 +40,7 @@ export default async function ScholarshipsPage() {
         )) : (
           <Card className="shadow-sm">
             <CardContent className="p-6">
-              <h2 className="text-lg font-semibold text-utn-ink">Sin becas activas</h2>
+              <h2 className="text-lg font-semibold text-inst-ink">Sin becas activas</h2>
               <p className="mt-2 text-sm text-muted-foreground">No hay convocatorias de becas abiertas o próximas por el momento.</p>
             </CardContent>
           </Card>

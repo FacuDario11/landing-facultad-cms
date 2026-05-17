@@ -20,10 +20,10 @@ export function QuickAccess() {
         <Link key={item.href} href={item.href}>
           <Card className="h-full shadow-sm transition hover:border-primary/40 hover:shadow-soft">
             <CardContent className="flex items-center gap-3 p-4">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-utn-sky text-primary">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-inst-sky text-primary">
                 <item.icon className="h-5 w-5" />
               </div>
-              <span className="font-semibold text-utn-ink">{item.label}</span>
+              <span className="font-semibold text-inst-ink">{item.label}</span>
             </CardContent>
           </Card>
         </Link>

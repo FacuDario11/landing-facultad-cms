@@ -161,7 +161,7 @@ export function ContentForm({ type = "noticia", action, initialData }: ContentFo
           ) : null}
           {(state.message || demoMessage) ? (
             <p
-              className={state.message ? `rounded-md border p-3 text-sm ${state.ok ? "border-primary/20 bg-utn-sky text-utn-ink" : "border-destructive/20 bg-destructive/10 text-destructive"}` : "rounded-md border border-primary/20 bg-utn-sky p-3 text-sm text-utn-ink"}
+              className={state.message ? `rounded-md border p-3 text-sm ${state.ok ? "border-primary/20 bg-inst-sky text-inst-ink" : "border-destructive/20 bg-destructive/10 text-destructive"}` : "rounded-md border border-primary/20 bg-inst-sky p-3 text-sm text-inst-ink"}
               role="status"
             >
               {state.message || demoMessage}

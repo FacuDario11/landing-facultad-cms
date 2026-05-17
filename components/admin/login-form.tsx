@@ -41,7 +41,7 @@ export function LoginForm({ missingEnv = false, unauthorized = false }: { missin
       <CardContent className="p-6">
         <form action={signIn} className="grid gap-4">
           <div>
-            <h1 className="text-2xl font-bold text-utn-ink">Ingreso administrativo</h1>
+            <h1 className="text-2xl font-bold text-inst-ink">Ingreso administrativo</h1>
             <p className="mt-2 text-sm text-muted-foreground">Acceso interno para equipos autorizados de Consejería Estudiantil.</p>
           </div>
           {missingEnv ? (

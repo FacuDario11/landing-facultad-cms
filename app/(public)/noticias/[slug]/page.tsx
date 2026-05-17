@@ -58,7 +58,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
             <Badge variant="secondary" className="capitalize">{item.category}</Badge>
             <span className="text-sm text-muted-foreground">{formatDate(item.publishedAt)}</span>
           </div>
-          <h1 className="max-w-4xl text-3xl font-bold tracking-tight text-utn-ink md:text-5xl">{item.title}</h1>
+          <h1 className="max-w-4xl text-3xl font-bold tracking-tight text-inst-ink md:text-5xl">{item.title}</h1>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">{item.excerpt}</p>
         </div>
       </section>

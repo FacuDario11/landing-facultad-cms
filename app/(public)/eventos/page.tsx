@@ -26,7 +26,7 @@ export default async function EventsPage({ searchParams }: { searchParams: Promi
 
   return (
     <>
-      <PageHeading eyebrow="Agenda institucional" title="Eventos" description="Charlas, talleres, encuentros y actividades de orientación para estudiantes de UTN FRT." />
+      <PageHeading eyebrow="Agenda institucional" title="Eventos" description="Charlas, talleres, encuentros y actividades de orientación para la comunidad estudiantil." />
       <section className="container py-10">
         <form className="mb-6 grid gap-3 rounded-lg border bg-card p-4 shadow-sm md:grid-cols-[1fr_auto]">
           {selectedCategory !== "Todos" ? <input type="hidden" name="category" value={selectedCategory} /> : null}
@@ -50,7 +50,7 @@ export default async function EventsPage({ searchParams }: { searchParams: Promi
         ) : (
           <Card className="shadow-sm">
             <CardContent className="p-6">
-              <h2 className="text-lg font-semibold text-utn-ink">Sin eventos próximos</h2>
+              <h2 className="text-lg font-semibold text-inst-ink">Sin eventos próximos</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 No hay actividades próximas para esta búsqueda o categoría. La agenda se actualizará cuando la institución confirme nuevas fechas.
               </p>

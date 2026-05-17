@@ -9,7 +9,7 @@ import { getNews } from "@/services/content-service";
 
 export const metadata: Metadata = {
   title: "Noticias",
-  description: "Noticias institucionales, comunicados, becas, pasantías y novedades de la Consejería Estudiantil UTN FRT."
+  description: "Noticias institucionales, comunicados, becas, pasantías y novedades para la comunidad estudiantil."
 };
 
 const categories = [
@@ -61,7 +61,7 @@ export default async function NewsPage({ searchParams }: { searchParams: Promise
         ) : (
           <Card className="shadow-sm">
             <CardContent className="p-6">
-              <h2 className="text-lg font-semibold text-utn-ink">Sin noticias publicadas</h2>
+              <h2 className="text-lg font-semibold text-inst-ink">Sin noticias publicadas</h2>
               <p className="mt-2 text-sm text-muted-foreground">No hay noticias publicadas para esta búsqueda o categoría.</p>
             </CardContent>
           </Card>
