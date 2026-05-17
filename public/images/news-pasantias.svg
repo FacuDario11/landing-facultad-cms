@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Orientación laboral y pasantías">
+  <rect width="1200" height="675" fill="#eef6ff"/>
+  <rect x="110" y="110" width="980" height="455" rx="18" fill="#fff" stroke="#d8e2ef" stroke-width="4"/>
+  <rect x="194" y="190" width="300" height="230" rx="12" fill="#0057a8" opacity=".14"/>
+  <rect x="253" y="251" width="182" height="126" rx="12" fill="#0057a8"/>
+  <path d="M300 251v-28c0-23 18-41 41-41h6c23 0 41 18 41 41v28" fill="none" stroke="#083b75" stroke-width="18"/>
+  <rect x="590" y="190" width="410" height="34" rx="8" fill="#083b75"/>
+  <rect x="590" y="260" width="340" height="22" rx="8" fill="#8ca2bd"/>
+  <rect x="590" y="310" width="386" height="22" rx="8" fill="#8ca2bd"/>
+  <rect x="590" y="390" width="214" height="56" rx="10" fill="#0057a8"/>
+  <text x="194" y="506" fill="#083b75" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700">Pasantías y desarrollo profesional</text>
+</svg>

@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 36% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 36% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 36% 14%;
+    --primary: 209 100% 33%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 36% 14%;
+    --muted: 213 32% 95%;
+    --muted-foreground: 217 16% 42%;
+    --accent: 206 72% 94%;
+    --accent-foreground: 209 100% 24%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 28% 88%;
+    --input: 214 28% 88%;
+    --ring: 209 100% 33%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer components {
+  .institutional-band {
+    background:
+      linear-gradient(180deg, rgba(231, 241, 251, 0.72), rgba(255, 255, 255, 0.92)),
+      radial-gradient(circle at top right, rgba(0, 87, 168, 0.12), transparent 34%);
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  .prose-institutional {
+    @apply prose prose-slate max-w-none prose-headings:text-utn-ink prose-a:text-primary prose-a:no-underline hover:prose-a:underline;
+  }
+}
